@@ -1,0 +1,1 @@
+alert( user[key] ); // John (if enter "name")
