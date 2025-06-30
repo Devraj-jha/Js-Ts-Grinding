@@ -20,3 +20,16 @@ document.getElementById("myBtn").addEventListener("click",function(){
     alert("anythign here...")
 })
 document.getElementById("btn").addEventListener("click",sum)
+
+function makemult(multi){
+    return function mult(x){
+            //something here
+
+    }
+}
+
+//why use expressions why created expression ...
+//pass fucntion as an arugment in an event listen
+//return funcion inside a funciton
+//conditional staements etc etc... i would understnad more abt this 
+// in future

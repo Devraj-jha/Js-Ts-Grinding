@@ -1,15 +1,13 @@
-function greet(name){
-  return "hello .. " + name;
-}//calback function
-function meet(name){
-  return "nice to meet you" + name;
+//higher order function are the funciton that
+//takes other func, as an arugment
+//
+let numbers = [1,2,3]
+let squrares = numbers.map(function(n){
+return n * n;
 }
+)
+console.log(squrares);
 
-function higherorder(func){
-  console.log(func("DJ"));
-
-}//higher order function a 
-
-
-
-meet("dj");
+// calback is a fucntion that is 
+// that is passed to another func
+//as an arument
