@@ -11,8 +11,3 @@ function multiplyALL(multiplier,...nums){
 const a = multiplyALL(3,5,6)
 console.log(a)
 
-function maximum(...nums){
-
-   console.log(Math.max(...nums));
-}
-maximum(1,2,3,4,5)
