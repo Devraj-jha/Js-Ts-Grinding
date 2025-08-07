@@ -24,3 +24,6 @@ switch (day) {
   default:
     console.log("Another day");
 }
+
+//without break fall through happens,
+//it runs all the remaining cases..
