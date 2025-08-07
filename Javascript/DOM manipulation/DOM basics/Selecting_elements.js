@@ -16,4 +16,3 @@ const par = document.querySelectorAll(".info")
 par.forEach(p => console.log(p.textContent));
 
 const a = document.getElementsByTagName("li");
-li.style.color = 'green'
