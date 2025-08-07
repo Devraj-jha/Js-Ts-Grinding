@@ -13,3 +13,4 @@ console.log(Object.keys(user))
 object.values(user)
 //returns arrays of value
 object.entries(user);
+
