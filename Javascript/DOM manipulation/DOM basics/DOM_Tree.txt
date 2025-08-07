@@ -1,0 +1,27 @@
+Dom stands for document object model
+it is a tree like representation of entire html document
+
+every tag in ur html become a node
+
+The DOM lets you read and modify 
+the structure, content, and style of a webpage using JavaScript.
+
+Document
+└── html
+    ├── head
+    │   └── title
+    └── body
+        ├── h1
+        └── p
+
+| Term                         | Description                     |
+| ---------------------------- | ------------------------------- |
+| `document`                   | Root object to access the DOM   |
+| `node`                       | Anything in the DOM tree        |
+| `element`                    | A tag like `<p>`, `<div>`, etc. |
+| `text node`                  | The actual text inside elements |
+| `parent`, `child`, `sibling` | Relationships between nodes     |
+
+
+in js the entire webapage is represented as a single object document
+
