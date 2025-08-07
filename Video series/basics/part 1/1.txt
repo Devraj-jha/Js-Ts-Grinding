@@ -1,5 +1,0 @@
-what is javascirpt.??
-why javascirpt..
-=> single threaded intrepred asychronous progrmaming lagnague..
-javascript.. => broswer 
-=> node js.. 
