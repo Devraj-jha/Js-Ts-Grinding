@@ -1,0 +1,22 @@
+javascript
+=> high level interpreted programming lnag
+
+what can it do ?
+=> add interactivity to websites
+=> modify html css
+=> communitate with server 
+=> store data on the broswer local storage, cookies
+=> build web apps
+=> run on server node js.
+
+where does js run ?
+
+=> Runs directly inside web browsers
+=>servr using node js
+
+interpreted codes run directly without needing to be compliedc into machine code
+dynamic => Things like varaible objects etc. can change wth running
+loosely type 
+// we don't declare like 
+int a; like cpp
+we can do direclty let a 
