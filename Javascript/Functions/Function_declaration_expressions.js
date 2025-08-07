@@ -14,4 +14,14 @@ function hello(){
 } // function delcartion
 const sayHi = function(){
     console.log("hello ")
-} // expresssion
+} // expresssion exists to give flexiblity...
+
+// example pass them as argugment  
+
+// | Property             | Function Declaration    | Function Expression                        |
+// | -------------------- | ----------------------- | ------------------------------------------ |
+// | Name in stack trace  | ✅ Yes                   | ✅ If named, ❌ if anonymous                 |
+// | Hoisted              | ✅ Function is hoisted   | ❌ Only variable declared (not initialized) |
+// | Useful in            | Library APIs, utilities | Callbacks, closures, IIFEs, event handlers |
+// | Can be self-invoked? | ❌ No                    | ✅ Yes (IIFE)                               |
+// | Example              | `function add() {}`     | `const add = function() {}`                |

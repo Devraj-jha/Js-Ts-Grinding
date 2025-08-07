@@ -24,3 +24,4 @@ console.log(square(3))
 // Constructors (new)
 
 // Needing arguments
+
