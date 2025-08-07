@@ -2,8 +2,11 @@
 
 //who is calling me right nwo.
 
-const personTemplate = {
-    greet: function(){
-        console.log("hello !, I am " + this.name)
-    }
-}
+const person = {
+  name: "Devraj",
+  greet: function() {
+    console.log("Hi, I'm " + this.name);
+  }
+};
+
+person.greet(); // Hi, I'm Devraj
