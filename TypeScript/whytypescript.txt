@@ -1,0 +1,21 @@
+js => flexible quick but can make mistake
+
+typescipt => drawing with ruler and guides
+
+TypeScript is a superset of JavaScript 
+that adds static typing and extra features, 
+then compiles (transpiles) down to regular
+ JavaScript so browsers can run it
+
+ js = buggy
+ dyanamic, loosely typed
+
+ | Problem in JavaScript                                                                       | How TypeScript Helps                                                      |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| You can pass a string to a function expecting a number, and JS won’t warn until it crashes. | TS checks **types at compile time** and warns instantly.                  |
+| Large codebases are hard to maintain.                                                       | TS makes code **self-documenting** with type annotations.                 |
+| Refactoring risks breaking hidden parts of the code.                                        | TS provides **intellisense**, autocompletion, and safe refactoring tools. |
+| New developers struggle to understand object shapes.                                        | TS defines **interfaces** & **type definitions**.                         |
+
+
+
