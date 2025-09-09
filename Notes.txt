@@ -1,0 +1,3 @@
+javascript => can run on many enviroment
+a host env. provies its own objects and function in additon
+to core js 
