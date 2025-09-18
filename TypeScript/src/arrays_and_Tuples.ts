@@ -21,4 +21,3 @@ let point: [x: number, y: number] = [10, 20];
 
 // Arrays = variable length, same type.
 // Tuples = fixed length, specific types
-
