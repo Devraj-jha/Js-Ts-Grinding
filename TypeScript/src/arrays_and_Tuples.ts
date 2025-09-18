@@ -18,3 +18,7 @@ rgb = [255, 100,300,200]; // extra numbers allowed after first three
 
 //named turples 
 let point: [x: number, y: number] = [10, 20];
+
+// Arrays = variable length, same type.
+// Tuples = fixed length, specific types
+
