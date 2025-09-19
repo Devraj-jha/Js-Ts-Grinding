@@ -2,8 +2,17 @@
 //takes another fucntion as a arugemnt
 //return another function
 
-function Greeter(name) {
-    return function(message){
-        console.log(`${message}, ${name}`)
-    }
+function greet(name, callback){
+    console.log(" hello. ", name );
+    callback();
 }
+function sayhi(){
+    console.log("How are you.. !! ")
+}
+function sayBye(){
+    
+        console.log("bye bye")
+
+    }
+greet("devraj jha," , sayBye)
+greet("dj" , sayhi)
