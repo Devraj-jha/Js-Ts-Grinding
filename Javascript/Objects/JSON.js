@@ -26,3 +26,7 @@ const jsonStr = '{"name":"Devraj","age":21}';
 const obj = JSON.parse(jsonStr);
 
 console.log(obj.name); // Devraj
+{
+  hi: "devraj",
+  bye: "jha"
+}

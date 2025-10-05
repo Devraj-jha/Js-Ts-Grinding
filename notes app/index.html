@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Notes Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <!-- ===== APPLICATION CONTAINER ===== -->
+    <div class="app-container">
+        
+        <!-- ===== SIDEBAR FOR NAVIGATION AND FILTERS ===== -->
+        <aside class="sidebar">
+            <h2 class="app-title">Notes App</h2>
+            
+            <!-- ===== NEW NOTE BUTTON ===== -->
+            <button id="newNoteBtn" class="btn btn-primary">
+                <span>+</span> New Note
+            </button>
+            
+            <!-- ===== SEARCH FUNCTIONALITY ===== -->
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search notes...">
+            </div>
+            
+            <!-- ===== FILTER OPTIONS ===== -->
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Notes</button>
+                <button class="filter-btn" data-filter="important">Important</button>
+                <button class="filter-btn" data-filter="recent">Recent</button>
+            </div>
+            
+            <!-- ===== TAGS FILTER ===== -->
+            <div class="form-group">
+                <label class="form-label">Filter by Tags</label>
+                <select id="tagFilter" class="form-control">
+                    <option value="">All Tags</option>
+                </select>
+            </div>
+            
+            <!-- ===== SORT OPTIONS ===== -->
+            <div class="form-group">
+                <label class="form-label">Sort By</label>
+                <select id="sortSelect" class="form-control">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="title">Title A-Z</option>
+                </select>
+            </div>
+            
+            <!-- ===== STATISTICS DISPLAY ===== -->
+            <div class="stats-container">
+                <h3>Statistics</h3>
+                <p>Total Notes: <span id="totalNotes">0</span></p>
+                <p>Important Notes: <span id="importantNotes">0</span></p>
+            </div>
+        </aside>
+        
+        <!-- ===== MAIN CONTENT AREA ===== -->
+        <main class="main-content">
+            
+            <!-- ===== NOTE CREATION/EDITING FORM ===== -->
+            <form id="noteForm" class="note-form">
+                <h2 id="formTitle">Create New Note</h2>
+                
+                <!-- ===== NOTE TITLE INPUT ===== -->
+                <div class="form-group">
+                    <label for="noteTitle" class="form-label">Title</label>
+                    <input type="text" id="noteTitle" class="form-control" placeholder="Enter note title" required>
+                </div>
+                
+                <!-- ===== NOTE CONTENT TEXTAREA ===== -->
+                <div class="form-group">
+                    <label for="noteContent" class="form-label">Content</label>
+                    <textarea id="noteContent" class="form-control" placeholder="Enter your note content" required></textarea>
+                </div>
+                
+                <!-- ===== TAGS INPUT ===== -->
+                <div class="form-group">
+                    <label for="noteTags" class="form-label">Tags (comma separated)</label>
+                    <input type="text" id="noteTags" class="form-control" placeholder="e.g., work, personal, ideas">
+                </div>
+                
+                <!-- ===== IMPORTANT CHECKBOX ===== -->
+                <div class="form-group">
+                    <label class="form-label">
+                        <input type="checkbox" id="noteImportant">
+                        Mark as Important
+                    </label>
+                </div>
+                
+                <!-- ===== FORM ACTION BUTTONS ===== -->
+                <div class="note-actions">
+                    <button type="submit" class="btn btn-primary">Save Note</button>
+                    <button type="button" id="cancelBtn" class="btn btn-outline">Cancel</button>
+                </div>
+            </form>
+            
+            <!-- ===== NOTES DISPLAY AREA ===== -->
+            <div id="notesContainer" class="notes-grid">
+                <!-- Notes will be dynamically inserted here by JavaScript -->
+            </div>
+            
+            <!-- ===== EMPTY STATE MESSAGE ===== -->
+            <div id="emptyState" class="text-center mt-20">
+                <h3>No notes yet</h3>
+                <p>Create your first note to get started!</p>
+            </div>
+        </main>
+    </div> 
+</body>
+</html>
