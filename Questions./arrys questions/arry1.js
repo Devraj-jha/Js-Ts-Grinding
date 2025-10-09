@@ -8,7 +8,6 @@
 
 
 
-
 let cars = ["a","b", "c"];
 console.log(cars[1])
  
