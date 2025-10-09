@@ -18,5 +18,5 @@ console.log(first);   // 1
 //similarly 
 //unshift => adds one or more elements to the beginning of the arra
 
-//sort => sort elements (alphabetically )
+//sort => sor t elements (alphabetically )
 
