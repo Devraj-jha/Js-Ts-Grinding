@@ -1,0 +1,47 @@
+backend => The brain + memory + rules of an application
+
+for example -> 
+Frontend: takes username + password
+Backend: checks if user exist, check if password is correct
+backend is not one thing,
+APIs 
+a doorway for the frontend to talk to the backend...
+
+POST /login
+POST /signup
+
+B. Business Logic (the rules)
+
+This is where thinking happens.
+
+Examples:
+
+Can a user cancel an order after 10 minutes?
+
+Should discount apply or not?
+
+
+C. Databases
+Backend:
+
+designs the database
+
+talks to the database
+
+protects the database
+
+authentication & authorization ( secruity etc etc )
+
+Performance ^ Scalability ( later stage )
+
+Request comes in
+↓
+Backend validates request
+↓
+Backend applies logic
+↓
+Backend talks to database
+↓
+Backend formats response
+↓
+Response goes back

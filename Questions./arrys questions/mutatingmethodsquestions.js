@@ -36,3 +36,4 @@ let letters = ["a","b", "c"]
 
 letters.shift();
 letters.unshift("d");
+console.log(letters)
