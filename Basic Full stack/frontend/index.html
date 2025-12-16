@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Full Stack</title>
+</head>
+<body>
+
+  <h2>Send Message</h2>
+
+  <input id="msgInput" placeholder="Type message" />
+  <button onclick="sendMessage()">Send</button>
+
+  <p id="response"></p>
+
+  <script>
+    async function sendMessage() {
+      const msg = document.getElementById("msgInput").value;
+
+      const response = await fetch("http://localhost:3000/send-message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          message: msg
+        })
+      });
+
+      const data = await response.json();
+      document.getElementById("response").innerText = data.reply || data.error;
+    }
+  </script>
+
+</body>
+</html>
